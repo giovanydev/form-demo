@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Form Demo</title>
+	<link rel="stylesheet" href="Form-Demo.css"/>
+</head>
+
+<body>
+	<h1>Form Practice</h1>
+	
+	<form>
+		<div> <!--First and Last Name  -->
+			<label for="First-Name"> First Name: </label>
+			<input id="First-Name" type="text" name="First-Name" required>
+			<label for="Last-Name"> Last Name:</label>
+			<input id="Last-Name" type="text" name="Last-Name" required>
+		</div>
+
+		<div> <!--Gender-->
+			<label for="Male"> Male</label>
+			<input id="Male" type="radio" name="Gender" value="Male">
+			<label for="Female"> Female</label>
+			<input id="Female" type="radio" name="Gender" value="Female">
+			<label for="Other"> Other</label>
+			<input id="Other" type="radio" name="Gender" value="Other">
+		</div>
+
+		<div> <!-- Email -->
+			<label for="email"> Email:</label>
+			<input id="email" type="email" name="email" required>
+			
+			<label for="password"> Password:</label>
+			<input id="password" type="password" pattern=".{8,}"   required title="8 characters minimum stupid!" name="password" required>
+		</div>
+		
+		<div>
+			<label>
+				Birthday:
+				<select name="Month">
+					<option>Month</option>
+					<option>January</option>
+					<option>February</option>
+					<option>March</option>
+					<option>April</option>
+					<option>May</option>
+					<option>June</option>
+					<option>July</option>
+					<option>August</option>
+					<option>September</option>
+					<option>October</option>
+					<option>November</option>
+					<option>December</option>
+				</select>
+				<select name="Day">
+					<option>Day</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>etc...</option>
+					<option>31</option>	
+				</select>
+				<select name="Year">
+					<option>Year</option>
+					<option>1990</option>
+					<option>1991</option>
+					<option>1992</option>
+					<option>1993</option>
+					<option>etc...</option>
+				</select>
+			</label>
+		</div>
+
+		<div>
+			<label>
+				I agree to the <em>Terms and Conditions</em>
+					<input type="checkbox" name="Agree">
+			</label>
+		</div>
+		
+		
+		<input type="submit">
+	</form>
+
+</body>
+</html>
